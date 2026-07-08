@@ -1,0 +1,39 @@
+.draft-editor-page {
+  display: flex;
+  justify-content: center;
+}
+
+.draft-editor-card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.draft-editor-page__back {
+  align-self: flex-start;
+}
+
+.draft-editor-card h1 {
+  font-size: 22px;
+  margin-bottom: var(--space-2);
+}
+
+.draft-editor-page__danger-zone {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 640px) {
+  .draft-editor-card {
+    padding: var(--space-4);
+  }
+}
